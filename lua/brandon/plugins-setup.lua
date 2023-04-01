@@ -27,7 +27,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	use("nvim-lua/plenary.nvim")
-	use("bmartel/vim-one")
+	use("romgrk/doom-one.vim")
 	use("github/copilot.vim")
 	use("szw/vim-maximizer")
 	use("tpope/vim-commentary")

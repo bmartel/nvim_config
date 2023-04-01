@@ -1,8 +1,7 @@
+vim.cmd("colorscheme doom-one")
 
-vim.cmd("colorscheme one")
-
-local status, _ = pcall(vim.cmd, "colorscheme one")
+local status, _ = pcall(vim.cmd, "colorscheme doom-one")
 
 if not status then
-  print("Colorscheme 'one' not found")
+	print("Colorscheme 'doom-one' not found")
 end
