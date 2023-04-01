@@ -4,10 +4,10 @@ if not status then
 	return
 end
 
-local lualine_onedark = require("lualine.themes.onedark")
+local lualine_theme = require("lualine.themes.ayu_mirage")
 
 lualine.setup({
 	options = {
-		theme = lualine_onedark,
+		theme = lualine_theme,
 	},
 })
