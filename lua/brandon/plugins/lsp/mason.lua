@@ -20,6 +20,7 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"tailwindcss",
+		"pyright",
 		"lua_ls",
 	},
 	automatic_installation = true,
@@ -27,6 +28,7 @@ mason_lspconfig.setup({
 
 mason_null_ls.setup({
 	ensure_installed = {
+		"autopep8",
 		"prettier",
 		"stylua",
 		"stylelint",
