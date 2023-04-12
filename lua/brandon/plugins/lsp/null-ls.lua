@@ -13,6 +13,15 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.stylelint,
 		formatting.autopep8,
+		formatting.eslint_d.with({
+			condition = function(utils)
+				return utils.root_has_file(".eslintrc.js")
+					or utils.root_has_file(".eslintrc.json")
+					or utils.root_has_file(".eslintrc.yaml")
+					or utils.root_has_file(".eslintrc.yml")
+					or utils.root_has_file(".eslintrc")
+			end,
+		}),
 		diagnostics.eslint_d.with({
 			condition = function(utils)
 				return utils.root_has_file(".eslintrc.js")
